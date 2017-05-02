@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<layout version="1.0.0">
+    <default>
+        <!-- update layout for all frontend page -->
+    </default>
+    <offlinestores_index_index>
+        <reference name="content">
+            <block type="offlinestores/list" name="offlinestores.list" template="offlinestores/list.phtml" />
+        </reference>
+    </offlinestores_index_index>
+    <offlinestores_index_view>
+        <reference name="content">
+            <block type="offlinestores/view" name="offlinestores.view" template="offlinestores/view.phtml" />
+        </reference>
+    </offlinestores_index_view>
+</layout>

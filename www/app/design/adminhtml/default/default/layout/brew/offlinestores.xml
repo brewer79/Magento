@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_offlinestores>
+        <reference name="content">
+            <block type="offlinestores/adminhtml_offlinestores" name="offlinestores" />
+        </reference>
+    </adminhtml_offlinestores>
+
+    <adminhtml_offlinestores_edit>
+        <update handle="editor"/>
+    </adminhtml_offlinestores_edit>
+</layout>

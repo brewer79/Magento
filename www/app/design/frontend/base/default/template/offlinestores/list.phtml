@@ -1,0 +1,24 @@
+<script type="text/javascript">decorateTable('brew_offlinestore')</script>
+<!-- Page Title -->
+<div class="page-title">
+    <h2><?php echo $this->__('Offline Stores') ?></h2>
+</div>
+<table id="brew_offlinestore" class="data-table">
+    <colgroup>
+    <thead>
+        <tr class="first last">
+            <th><?php echo $this->__('Image') ?></th>
+            <th><?php echo $this->__('Name') ?></th>
+            <th><?php echo $this->__('Short Description') ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->getCollection() as $store): ?>
+        <tr>
+            <td><?php echo $store->getData('position') ?></td>
+            <td><?php echo $store->getData('name') ?></td>
+            <td><?php echo $store->getData('city') ?></td>
+        </tr>
+        <?php endforeach ?>
+    </tbody>
+</table>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <offlinestores translate="title" module="BREW_Offlinestores">
+            <label>Offline Stores</label>
+            <sort_order>111</sort_order>
+        </offlinestores>
+    </tabs>
+    <sections>
+        <settings module="BREW_Offlinestores" translate="label">
+        <class>separator-top</class>
+        <label>Offline Store Settings</label>
+        <tab>offlinestores</tab>
+        <frontend>text</frontend>
+        <sort_order>1</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+        <groups>
+            <pagination module="BREW_Offlinestores" translate="label">
+                <label>Pagination</label>
+                <expanded>0</expanded>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <fields>
+                    <enabled translate="label comment" module="BREW_Offlinestores">
+                        <label>Enabled</label>
+                        <frontend_type>select</frontend_type> <!-- lib/Varien/Data/Form/Element -->
+                        <source_model>offlinestores/source_status</source_model>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <comment>disabled/enabled</comment>
+                    </enabled>
+                    <blocks_count>
+                        <label>Blocks on page</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>2</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <depends><enabled>1</enabled></depends>
+                    </blocks_count>
+                    <raw_text>
+                        <label>Raw text</label>
+                        <frontend_type>textarea</frontend_type>
+                        <sort_order>3</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <depends><enabled>1</enabled></depends>
+                    </raw_text>
+                </fields>
+            </pagination>
+            <pageview module="BREW_Offlinestores" translate="label">
+                <label>Page View</label>
+                <expanded>0</expanded>
+                <sort_order>10</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <fields>
+                    <enabled translate="label comment" module="BREW_Offlinestores">
+                        <label>Enabled</label>
+                        <frontend_type>select</frontend_type>
+                        <source_model>offlinestores/source_status</source_model>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <comment>disabled/enabled</comment>
+                    </enabled>
+                    <blocks_count>
+                        <label>Blocks on page</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>2</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <depends><enabled>1</enabled></depends>
+                    </blocks_count>
+                    <raw_text>
+                        <label>Raw text</label>
+                        <frontend_type>textarea</frontend_type>
+                        <sort_order>3</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <depends><enabled>1</enabled></depends>
+                    </raw_text>
+                </fields>
+            </pageview>
+        </groups>
+        </settings>
+    </sections>
+</config>
