@@ -33,7 +33,7 @@
                         <show_in_default>1</show_in_default>
                         <show_in_website>1</show_in_website>
                         <show_in_store>1</show_in_store>
-                        <comment>disabled/enabled</comment>
+                        <comment><![CDATA[disabled/enabled]]></comment>
                     </enabled>
                     <blocks_count>
                         <label>Blocks on page</label>
@@ -71,7 +71,7 @@
                         <show_in_default>1</show_in_default>
                         <show_in_website>1</show_in_website>
                         <show_in_store>1</show_in_store>
-                        <comment>disabled/enabled</comment>
+                        <comment><![CDATA[disabled/enabled]]></comment>
                     </enabled>
                     <blocks_count>
                         <label>Blocks on page</label>
