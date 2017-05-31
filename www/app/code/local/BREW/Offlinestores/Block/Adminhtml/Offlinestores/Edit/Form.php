@@ -21,7 +21,7 @@ class BREW_Offlinestores_Block_Adminhtml_Offlinestores_Edit_Form extends Mage_Ad
                 'id' => 'edit_form',
                 'action' => $this->getUrl('*/*/save',array('block_id'=>$this->getRequest()->getParam('block_id'))),
                 'method' => 'post',
-                //'enctype' => 'multipart/form-data'
+                'enctype' => 'multipart/form-data'
             )
         );
 
