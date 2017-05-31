@@ -9,7 +9,7 @@ class BREW_Offlinestores_Block_Adminhtml_Offlinestores_Grid extends Mage_Adminht
         $this->setDefaultSort('block_id');
         $this->setDefaultDir('ASC');
         $this->setSaveParametersInSession(true);
-        //$this->setUseAjax(true);
+        $this->setUseAjax(true);
     }
 
     protected function _prepareCollection()
