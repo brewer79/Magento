@@ -195,7 +195,7 @@ class BREW_Offlinestores_Block_Adminhtml_Offlinestores_Edit_Form extends Mage_Ad
 
         return parent::_prepareForm();
     }
-
+        /*  add WYSIWYG editor */
         protected function _prepareLayout()
         {
             parent::_prepareLayout();
